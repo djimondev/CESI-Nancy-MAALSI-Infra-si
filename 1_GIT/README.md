@@ -22,4 +22,4 @@ OR use **SWL**
 
 `git clone [remoterepository]`
 
-eg. `git clone https://github.com/djimondev/CESI-Nancy-MAALSI-Infra-si``
+eg. `git clone https://github.com/djimondev/CESI-Nancy-MAALSI-Infra-si`
