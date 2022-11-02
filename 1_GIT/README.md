@@ -80,6 +80,10 @@ Eg.
 
 ## Advanced
 
+### See my current modifications
+
+`git diff`
+
 ### put my modifications in a buffer
 
 `git stash`
