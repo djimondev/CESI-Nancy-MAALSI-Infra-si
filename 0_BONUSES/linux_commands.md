@@ -4,3 +4,4 @@
 - `mkdir` (create a directory)
 - `cd` (move into a directory)
 - `mv`(move or rename a file -or a directory- )
+- `pwd` (returns the cureent path)

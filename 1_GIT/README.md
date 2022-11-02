@@ -23,3 +23,18 @@ OR use **SWL**
 `git clone [remoterepository]`
 
 eg. `git clone https://github.com/djimondev/CESI-Nancy-MAALSI-Infra-si`
+
+## Add files into our commit
+
+`git add [filepath]`
+
+eg.
+
+`git add README.md` <- add a file
+
+`git add 0_BONUSES\.` <- add every files in a folder
+
+`git add 0_BONUSES\markdown.md` <- add a specific file within a folder
+
+`git add .` <- Add every files in current folder
+`git add -A` <- same :)
