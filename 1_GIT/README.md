@@ -43,3 +43,7 @@ eg.
 ## Create your commit
 
 `git commit -m "Added a command in linux doc et going ahead in git"`
+
+## Push your commit
+
+`git push`
