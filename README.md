@@ -10,3 +10,4 @@
   - shell_customization
 - 1_GIT
 - 2_GIT_FLOW
+- 3_MULTIPASS
