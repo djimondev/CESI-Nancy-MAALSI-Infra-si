@@ -47,3 +47,11 @@ eg.
 ## Push your commit
 
 `git push`
+
+## Retrieve code
+
+`git pull`
+
+## Check status
+
+`git status`
