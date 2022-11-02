@@ -7,4 +7,6 @@
 - 0_BONUSES
   - linux_commands
   - markdown
+  - shell_customization
 - 1_GIT
+- 2_GIT_FLOW
