@@ -32,3 +32,10 @@ this is a **bold** text
 this is an _italic_ text
 
 this is an **_bold and italic_** text
+
+## Code with syntax coloration
+
+```javascript
+var e = "elemnt";
+console.log(e);
+```
