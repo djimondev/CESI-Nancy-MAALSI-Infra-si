@@ -78,6 +78,13 @@ Eg.
 Eg.
 `git checkout -b develop`
 
+### Merge develop on main
+
+```
+git checkout main
+git merge develop
+```
+
 ## Advanced
 
 ### put my modifications in a buffer
