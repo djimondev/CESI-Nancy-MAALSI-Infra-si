@@ -18,13 +18,15 @@ Download and install from [this link](https://gitforwindows.org/)
 
 OR use **SWL**
 
-## Clone a repository
+## Basics
+
+### Clone a repository
 
 `git clone [remoterepository]`
 
 eg. `git clone https://github.com/djimondev/CESI-Nancy-MAALSI-Infra-si`
 
-## Add files into our commit
+### Add files into our commit
 
 `git add [filepath]`
 
@@ -40,18 +42,48 @@ eg.
 
 `git add -A` <- same :)
 
-## Create your commit
+### Create your commit
 
 `git commit -m "Added a command in linux doc et going ahead in git"`
 
-## Push your commit
+### Push your commit
 
 `git push`
 
-## Retrieve code
+### Retrieve code
 
 `git pull`
 
-## Check status
+### Check status
 
 `git status`
+
+## Branches
+
+### Show branches
+
+`git branch -a`
+
+### Checkout an existing branch
+
+`git checkout [name_of_the_branch]`
+
+Eg.
+`git checkout main`
+
+### Create a branch
+
+`git checkout -b [name_of_the_branch]`
+
+Eg.
+`git checkout -b develop`
+
+## Advanced
+
+### put my modifications in a buffer
+
+`git stash`
+
+### retrieve from the buffer
+
+`git stash pop`
