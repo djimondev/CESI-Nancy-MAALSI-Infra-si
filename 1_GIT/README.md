@@ -37,4 +37,9 @@ eg.
 `git add 0_BONUSES\markdown.md` <- add a specific file within a folder
 
 `git add .` <- Add every files in current folder
+
 `git add -A` <- same :)
+
+## Create your commit
+
+`git commit -m "Added a command in linux doc et going ahead in git"`
