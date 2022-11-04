@@ -1,0 +1,47 @@
+version: "2"
+services:
+  mysql:
+    restart: always
+    image: sameersbn/mysql
+    environment:
+      - DB_USER=invoiceplane
+      - DB_PASS=password
+      - DB_NAME=invoiceplane_db
+    volumes:
+      - ./mysql:/var/lib/mysql
+
+  invoiceplane:
+    restart: always
+    image: sameersbn/invoiceplane:1.5.9-3
+    command: app:invoiceplane
+    environment:
+      - DEBUG=false
+      - TZ=Asia/Kolkata
+
+      - DB_TYPE=mysqli
+      - DB_HOST=mysql
+      - DB_USER=invoiceplane
+      - DB_PASS=password
+      - DB_NAME=invoiceplane_db
+
+      - INVOICEPLANE_URL=http://localhost:10080
+      - INVOICEPLANE_PROXY_IPS=
+      - INVOICEPLANE_BACKUPS_EXPIRY=0
+    depends_on:
+      - mysql
+    volumes:
+      - ./invoiceplane:/var/lib/invoiceplane
+
+  nginx:
+    restart: always
+    image: sameersbn/invoiceplane:1.5.9-3
+    command: app:nginx
+    environment:
+      - INVOICEPLANE_PHP_FPM_HOST=invoiceplane
+      - INVOICEPLANE_PHP_FPM_PORT=9000
+    depends_on:
+      - invoiceplane
+    ports:
+      - "10080:80"
+    volumes_from:
+      - invoiceplane
