@@ -45,4 +45,37 @@ services:
 
 ## Lab 2
 
-## Lab 3
+```
+version: "3"
+services:
+  www1:
+    image: httpd
+    ports:
+      - "8001:80"
+    volumes:
+      - ./www1:/usr/local/apache2/htdocs/
+  www2:
+    image: caddy
+    ports:
+      - "8002:80"
+    volumes:
+      - ./www2:/usr/share/caddy/
+  www3:
+    image: nginx
+    ports:
+      - "8003:80"
+    volumes:
+      - ./www3:/usr/share/nginx/html/
+  www4:
+    build: www4
+    volumes:
+      - ./www4:/var/www/html
+```
+
+## Lab 3 - dolibarr
+
+See [docker-compose.yml](lab3/docker-compose.yml)
+
+## Lab 4 - invoiceplane
+
+See [docker-compose.yml](lab4/docker-compose.yml)
