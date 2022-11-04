@@ -13,4 +13,14 @@ docker ps # list running containers
 docker stop $(docker ps -q) # stop every running containers
 docker run --rm bash sleep 10 # run a containe during 10 seconds
 docker ps -a # list stopped containers
+docker system prune -a # remove every docker item
+```
+
+## Create our own image
+
+See [Dockerfile_lab](./Dockerfile_lab/)
+
+```
+
+
 ```
