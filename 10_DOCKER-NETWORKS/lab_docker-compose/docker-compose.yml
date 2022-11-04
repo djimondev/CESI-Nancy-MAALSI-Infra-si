@@ -1,0 +1,21 @@
+version: "3"
+services:
+  www1:
+    container_name: www1
+    image: httpd
+    ports:
+      - "8001:80"
+  www2:
+    container_name: www2
+    image: caddy
+    ports:
+      - "8002:80"
+  www3:
+    container_name: www3
+    image: nginx
+    ports:
+      - "8003:80"
+networks:
+  default:
+    external:
+      name: maalsi-nancy
